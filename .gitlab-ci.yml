@@ -1,0 +1,8 @@
+
+stages:
+  - build
+
+build:gitlab-runner-base:
+  stage: build
+  script:
+    - docker build -t renaultdigital/gitlab-runner-base gitlab-runner-base
