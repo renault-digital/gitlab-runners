@@ -8,7 +8,6 @@ RUN set -ux && \
   mkdir -p /opt/elixir-${ELIXIR_VERSION}/ && \
   unzip Precompiled.zip -d /opt/elixir-${ELIXIR_VERSION}/ && \
   rm Precompiled.zip && \
-  rm -rf /etc/ssl && \
   apk --update add erlang-crypto erlang-syntax-tools erlang-parsetools erlang-inets erlang-ssl erlang-public-key erlang-eunit \
   erlang-asn1 erlang-sasl erlang-erl-interface erlang-dev && \
   rm -rf /var/cache/apk/* && \
