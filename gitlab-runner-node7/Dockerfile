@@ -7,7 +7,7 @@ ENV CHROMIUM_VERSION 61
 ENV FREETYPE_VERSION 2.7.1
 
 # Install Node & Chromium
-RUN apk add 
+RUN apk add \
     --update \
     "nodejs-current=${NODE_VERSION}" \
     "nodejs-current-npm=${NODE_VERSION}" \

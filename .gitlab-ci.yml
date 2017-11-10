@@ -4,27 +4,27 @@ stages:
   - prebuild
   - build
 
-prebuild:gitlab-runner-base:
+prebuild:base:
   stage: prebuild
   script:
     - docker build -t renaultdigital/gitlab-runner-base gitlab-runner-base
 
-build:gitlab-runner-elixir:
+build:elixir:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-elixir gitlab-runner-elixir
 
-build:gitlab-runner-node7:
+build:node7:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-node7 gitlab-runner-node7
 
-build:gitlab-runner-node8:
+build:node8:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-node8 gitlab-runner-node8
 
-build:gitlab-runner-gitbook:
+build:gitbook:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-gitbook gitlab-runner-gitbook
