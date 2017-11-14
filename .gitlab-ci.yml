@@ -28,3 +28,8 @@ build:gitbook:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-gitbook gitlab-runner-gitbook
+
+build:kube:
+  stage: build
+  script:
+    - docker build -t renaultdigital/gitlab-runner-kube gitlab-runner-kube
