@@ -4,7 +4,7 @@ Basic alpine images builded with build requirements for several languages, tools
 
 This repository is mirrored on GitHub by GitLab: https://github.com/renault-digital/gitlab-runners
 
-Dockers are publicly hosted on https://hub.docker.com/u/renaultdigital/dashboard/
+Dockers are publicly hosted on https://hub.docker.com/u/renaultdigital/
 
 The renaultdigital organization on Dockerhub is integrated with the renault-digital GitHub organization. 
 Automatic builds are triggered for the gitlab-runners at each commit.
