@@ -18,7 +18,6 @@ RUN apk add \
     ttf-freefont \
     --update-cache \
     --repository "http://dl-cdn.alpinelinux.org/alpine/${ALPINE_VERSION}/community" && \
-    rm /var/cache/apk/* && \
-    npm install -g yarn
+    rm /var/cache/apk/*
 
 
