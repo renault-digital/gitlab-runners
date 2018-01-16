@@ -1,4 +1,4 @@
-FROM renaultdigital/gitlab-runner-base
+FROM node:9.4.0-alpine
 
 
 ENV ALPINE_VERSION edge
@@ -10,18 +10,15 @@ ENV CHROME_BIN /usr/bin/chromium-browser
 
 # Install Node & Chromium
 RUN apk add \
-    --update \
-    "nodejs=${NODE_VERSION}" \
-    "nodejs-npm=${NODE_VERSION}" \
+    --update --no-cache \
     "chromium>=${CHROMIUM_VERSION}" \
     "chromium-chromedriver>=${CHROMIUM_VERSION}" \
     "freetype>=${FREETYPE_VERSION}" \
     "harfbuzz>=${HARFBUZZ_VERSION}" \
     udev \
-    ttf-freefont \
+    git \ 
+    bash \
     --update-cache \
     --repository "http://dl-cdn.alpinelinux.org/alpine/${ALPINE_VERSION}/main" \
     --repository "http://dl-cdn.alpinelinux.org/alpine/${ALPINE_VERSION}/community" && \
     rm /var/cache/apk/*
-
-
