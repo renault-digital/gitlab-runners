@@ -19,11 +19,20 @@ build:node7:
   script:
     - docker build -t renaultdigital/gitlab-runner-node7 gitlab-runner-node7
 
+build:node7-openjdk8:
+  stage: build
+  script:
+    - docker build -t renaultdigital/gitlab-runner-node7-openjdk8 gitlab-runner-node7-openjdk8
+
 build:node8:
   stage: build
   script:
     - docker build -t renaultdigital/gitlab-runner-node8 gitlab-runner-node8
 
+build:node8-openjdk8:
+  stage: build
+  script:
+    - docker build -t renaultdigital/gitlab-runner-node8-openjdk8 gitlab-runner-node8-openjdk8
 
 build:node9:
   stage: build
