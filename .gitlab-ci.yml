@@ -39,6 +39,11 @@ build:node9:
   script:
     - docker build -t renaultdigital/gitlab-runner-node9 gitlab-runner-node9
 
+build:node9-openjdk8:
+  stage: build
+  script:
+    - docker build -t renaultdigital/gitlab-runner-node9-openjdk8 gitlab-runner-node9-openjdk8
+
 build:gitbook:
   stage: build
   script:
