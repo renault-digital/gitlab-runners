@@ -18,6 +18,7 @@ RUN apk add \
     udev \
     git \ 
     bash \
+    curl \
     --update-cache \
     --repository "http://dl-cdn.alpinelinux.org/alpine/${ALPINE_VERSION}/main" \
     --repository "http://dl-cdn.alpinelinux.org/alpine/${ALPINE_VERSION}/community" && \
